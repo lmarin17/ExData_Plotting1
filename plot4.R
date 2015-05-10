@@ -1,4 +1,11 @@
 packs <- installed.packages()
+## plot4.R   -  LMarin   5/9/2015
+# Read the household power consumption file from working directory
+# Select only the dates  2/1/2007 - 2/2/2007
+# Use Base plotting system to create a set of 4 plots of various readings over time
+# Write the set to plot4.png file
+
+# Our selection of data to read will require the sqldf package
 packages <- packs[,1]
 if (!is.element("sqldf",packages)) 
   install.packages("sqldf")

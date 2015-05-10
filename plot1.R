@@ -1,8 +1,13 @@
+## plot1.R   -  LMarin   5/9/2015
+# Read the household power consumption file from working directory
+# Select only the dates  2/1/2007 - 2/2/2007
+# Use Base plotting system to create a histogram of Global Active Power, write to plot1.png file
+
+# Our selection of data to read will require the sqldf package
 packs <- installed.packages()
 packages <- packs[,1]
 if (!is.element("sqldf",packages)) 
   install.packages("sqldf")
-
 
 library(sqldf)
 
